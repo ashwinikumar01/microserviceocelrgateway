@@ -1,0 +1,32 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/ProductsAPI",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6010
+        }
+      ],
+      "UpstreamPathTemplate": "/api/products",
+      "UpstreamHttpMethod": [ "Get","Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/VendorsAPI",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6011
+        }
+      ],
+      "UpstreamPathTemplate": "/api/vendors",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+
+  ],
+  "GobalConfiguration": {
+    "BaseUrl": "https://localhost:6001"
+  }
+}
