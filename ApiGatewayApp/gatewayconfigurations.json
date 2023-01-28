@@ -22,7 +22,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/vendors",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get","Post" ]
     }
 
   ],
